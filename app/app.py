@@ -40,7 +40,8 @@ def index():
     return '''
     <p>
         Welcome to <a href="//snad.space">SNAD</a>
-        <a href="http://ogledb.astrouw.edu.pl/~ogle/CVS/overview.html">OGLE-III</a> mirror
+        <a href="http://ogledb.astrouw.edu.pl/~ogle/CVS/overview.html">OGLE-III</a>
+        metadata mirror
     </p>
     <p>
         See API details on <a href="/api/v1/help">/api/v1/help</a>
