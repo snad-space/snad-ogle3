@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  sql:
+    build: ./sql/
+    networks:
+      - app
+    restart: always
+
+  app:
+    build: ./app/
+    networks:
+      - app
+      - proxy
+    depends_on:
+      - sql
+    environment:
+       VIRTUAL_HOST: ogle3.snad.space
+       HTTPS_METHOD: noredirect
+       DYNDNS_HOST: ogle3.snad.space
+       LETSENCRYPT_HOST: ogle3.snad.space
+       LETSENCRYPT_EMAIL: ogle3@homb.it
+    restart: always
+
+networks:
+  app:
+  proxy:
+    external:
+      name: proxy
