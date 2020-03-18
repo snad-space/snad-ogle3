@@ -16,3 +16,5 @@ RUN tar -zxf pgsphere-master.tar.gz && \
 COPY ogle.sql.bz2 /ogle.sql.bz2
 
 COPY docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/
+
+ENV POSTGRES_HOST_AUTH_METHOD trust
