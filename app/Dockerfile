@@ -1,4 +1,4 @@
-FROM python
+FROM python:3-buster
 
 EXPOSE 80
 
