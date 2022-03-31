@@ -19,7 +19,7 @@ services:
        HTTPS_METHOD: noredirect
        DYNDNS_HOST: ogle3.snad.space
        LETSENCRYPT_HOST: ogle3.snad.space
-       LETSENCRYPT_EMAIL: ogle3@homb.it
+       LETSENCRYPT_EMAIL: letsencrypt@snad.space
     restart: always
 
 networks:
